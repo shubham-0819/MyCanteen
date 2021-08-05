@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "MyCanteen"
+  "defaultProject": "MyCanteen",
+  "cli": {
+    "analytics": false
+  }
 }

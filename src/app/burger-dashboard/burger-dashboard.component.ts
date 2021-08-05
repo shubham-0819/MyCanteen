@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
+// import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-burger-dashboard',
@@ -13,18 +14,18 @@ export class BurgerDashboardComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'Card 1', cols: 1, rows: 1 },
-          { title: 'Card 2', cols: 1, rows: 1 },
-          { title: 'Card 3', cols: 1, rows: 1 },
-          { title: 'Card 4', cols: 1, rows: 1 }
+          { title: 'Chilli Burger',image:'./../../assets/Burger/chilli-burger.jpg',description:'Perfect Lamb Satay BurgerSucculent lamb burgers with the crunchiness of cashew nuts ', cols: 1, rows: 1 },
+          { title: 'Classic Cheese Burger', cols: 1, rows: 1 },
+          { title: 'Double Cheese Burger', cols: 1, rows: 1 },
+          { title: 'Supreme Veg Burger', cols: 1, rows: 1 }
         ];
       }
 
       return [
-        { title: 'Card 1', cols: 2, rows: 1 },
-        { title: 'Card 2', cols: 1, rows: 1 },
-        { title: 'Card 3', cols: 1, rows: 2 },
-        { title: 'Card 4', cols: 1, rows: 1 }
+        { title: 'Chilli Burger',image:'./../../assets/Burger/chilli-burger.jpg',description:'Perfect Lamb Satay BurgerSucculent lamb burgers with the crunchiness of cashew nuts ',image:'./../../assets/Burger/chilli-burger.jpg', cols: 1, rows: 1 },
+        { title: 'Classic Cheese Burger',image:'./../../assets/Burger/Classic cheese burger.jpg', cols: 1, rows: 1 },
+        { title: 'Double Cheese Burger',image:'./../../assets/Burger/Double cheese burger.jpg', cols: 1, rows: 1 },
+        { title: 'Supreme Veg Burger',image:'./../../assets/Burger/supreme-veggie-burger.jpg', cols: 1, rows: 1 }
       ];
     })
   );

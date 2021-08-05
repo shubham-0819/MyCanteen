@@ -28,7 +28,8 @@ import { SouthIndianDashboardComponent } from './south-indian-dashboard/south-in
 import { ChineseDashboardComponent } from './chinese-dashboard/chinese-dashboard.component';
 import { PizzaDashboardComponent } from './pizza-dashboard/pizza-dashboard.component';
 import { BurgerDashboardComponent } from './burger-dashboard/burger-dashboard.component';
-import { CakeDashboardComponent } from './cake-dashboard/cake-dashboard.component'
+import { CakeDashboardComponent } from './cake-dashboard/cake-dashboard.component';
+import {DataService} from './data.service';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,7 @@ import { CakeDashboardComponent } from './cake-dashboard/cake-dashboard.componen
     MatCardModule,
     MatMenuModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
